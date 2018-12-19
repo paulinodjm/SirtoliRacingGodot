@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/textures/carSirto.png" type="Texture" id=1]
+
+[node name="SirtoCar" type="Node2D" index="0"]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+
+rotation = -1.5708
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+
