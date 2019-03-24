@@ -7,97 +7,51 @@
 [ext_resource path="res://assets/Tree2.tscn" type="PackedScene" id=5]
 
 [sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
 extents = Vector2( 520, 10 )
 
 [sub_resource type="RectangleShape2D" id=2]
-
-custom_solver_bias = 0.0
 extents = Vector2( 10, 300 )
 
 [node name="SceneRoot" type="Node"]
 
-[node name="CheckPoint" parent="." index="0" instance=ExtResource( 1 )]
-
+[node name="CheckPoint" parent="." instance=ExtResource( 1 )]
 position = Vector2( 207.001, 353.002 )
 
-[node name="Box" parent="." index="1" instance=ExtResource( 2 )]
-
+[node name="Box" parent="." instance=ExtResource( 2 )]
 position = Vector2( 448.078, 486.647 )
 rotation = 0.369403
 
-[node name="Tree1" parent="." index="2" instance=ExtResource( 3 )]
-
+[node name="Tree1" parent="." instance=ExtResource( 3 )]
 position = Vector2( 720.919, 357.991 )
 
-[node name="SirtoCar" parent="." index="3" instance=ExtResource( 4 )]
-
+[node name="SirtoCar" parent="." instance=ExtResource( 4 )]
 position = Vector2( 561.239, 400.428 )
 accel_speed = 90.0
 
-[node name="Tree2" parent="." index="4" instance=ExtResource( 5 )]
-
+[node name="Tree2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 375.344, 110.896 )
 
-[node name="TopWall" type="StaticBody2D" parent="." index="5"]
-
+[node name="TopWall" type="StaticBody2D" parent="."]
 position = Vector2( 510, -10 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="TopWall" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TopWall"]
 shape = SubResource( 1 )
 
-[node name="BottomWall" type="StaticBody2D" parent="." index="6"]
-
+[node name="BottomWall" type="StaticBody2D" parent="."]
 position = Vector2( 510, 610 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomWall" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BottomWall"]
 shape = SubResource( 1 )
 
-[node name="LeftWall" type="StaticBody2D" parent="." index="7"]
-
+[node name="LeftWall" type="StaticBody2D" parent="."]
 position = Vector2( -10, 300 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
 shape = SubResource( 2 )
 
-[node name="RightWall" type="StaticBody2D" parent="." index="8"]
-
+[node name="RightWall" type="StaticBody2D" parent="."]
 position = Vector2( 1030, 300 )
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall" index="0"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
 shape = SubResource( 2 )
-
 
