@@ -1,11 +1,11 @@
 [gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://assets/TileSet.tres" type="TileSet" id=1]
-[ext_resource path="res://assets/CheckPoint.tscn" type="PackedScene" id=2]
-[ext_resource path="res://assets/Box.tscn" type="PackedScene" id=3]
-[ext_resource path="res://assets/SirtoCar.tscn" type="PackedScene" id=4]
-[ext_resource path="res://assets/Tree1.tscn" type="PackedScene" id=5]
-[ext_resource path="res://assets/Tree2.tscn" type="PackedScene" id=6]
+[ext_resource path="res://assets/Box.tscn" type="PackedScene" id=2]
+[ext_resource path="res://assets/SirtoCar.tscn" type="PackedScene" id=3]
+[ext_resource path="res://assets/Tree1.tscn" type="PackedScene" id=4]
+[ext_resource path="res://assets/Tree2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://assets/CheckPoint.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 520, 10 )
@@ -24,30 +24,30 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CheckPoint" parent="." instance=ExtResource( 2 )]
-position = Vector2( 207.001, 353.002 )
-
-[node name="Box" parent="." instance=ExtResource( 3 )]
+[node name="Box" parent="." instance=ExtResource( 2 )]
 position = Vector2( 448.078, 486.647 )
 rotation = 0.369403
 
-[node name="Box2" parent="." instance=ExtResource( 3 )]
+[node name="Box2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 245.326, 324.008 )
 rotation = 0.29712
 
-[node name="Box3" parent="." instance=ExtResource( 3 )]
+[node name="Box3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 309.507, 373.602 )
 rotation = 0.964252
 
-[node name="SirtoCar" parent="." instance=ExtResource( 4 )]
+[node name="SirtoCar" parent="." instance=ExtResource( 3 )]
 position = Vector2( 561.239, 400.428 )
 accel_speed = 90.0
 
-[node name="Tree1" parent="." instance=ExtResource( 5 )]
+[node name="Tree1" parent="." instance=ExtResource( 4 )]
 position = Vector2( 720.919, 357.991 )
 
-[node name="Tree2" parent="." instance=ExtResource( 6 )]
+[node name="Tree2" parent="." instance=ExtResource( 5 )]
 position = Vector2( 375.344, 110.896 )
+
+[node name="CheckPoint" parent="." instance=ExtResource( 6 )]
+position = Vector2( 207.001, 353.002 )
 
 [node name="TopWall" type="StaticBody2D" parent="."]
 editor/display_folded = true

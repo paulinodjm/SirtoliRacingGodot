@@ -4,43 +4,22 @@
 [ext_resource path="res://assets/textures/carSirto.png" type="Texture" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
 extents = Vector2( 16.8278, 32.8913 )
 
-[node name="SirtoCar" type="RigidBody2D" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-mode = 0
+[node name="SirtoCar" type="RigidBody2D"]
 mass = 20.0
-friction = 1.0
-bounce = 0.0
-gravity_scale = 1.0
-custom_integrator = false
-continuous_cd = 0
-contacts_reported = 0
-contact_monitor = false
-sleeping = false
 can_sleep = false
-linear_velocity = Vector2( 0, 0 )
-linear_damp = -1.0
-angular_velocity = 0.0
 angular_damp = 1.0
 script = ExtResource( 1 )
-_sections_unfolded = [ "Angular", "Linear", "Transform" ]
-accel_speed = 1000.0
+accel_speed = 1.0
 rotation_speed = 180.0
 
-[node name="Sprite" type="Sprite" parent="." index="0"]
-
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, 20 )
 rotation = 1.5708
 texture = ExtResource( 2 )
-_sections_unfolded = [ "Transform" ]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
-
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0, 20 )
 shape = SubResource( 1 )
-
 
