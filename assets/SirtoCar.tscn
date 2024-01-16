@@ -12,7 +12,7 @@ can_sleep = false
 angular_damp = 1.0
 script = ExtResource( 1 )
 accel_speed = 1.0
-rotation_speed = 180.0
+rotation_speed = 5.0
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, 20 )
@@ -22,4 +22,3 @@ texture = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 20 )
 shape = SubResource( 1 )
-
